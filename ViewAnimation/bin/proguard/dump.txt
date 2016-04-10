@@ -1,0 +1,246 @@
+_____________________________________________________________________
++ Program class: com/myb/nimation/XmlAnimationActivity
+  Superclass:    android/app/Activity
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.myb.nimation.XmlAnimationActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 51):
+  + Integer [2130903041]
+  + Integer [2131099653]
+  + Integer [2131099654]
+  + Class [android/app/Activity]
+  + Class [android/widget/Button]
+  + Class [android/widget/ImageView]
+  + Class [com/myb/nimation/XmlAnimationActivity]
+  + Class [com/myb/nimation/a]
+  + Fieldref [com/myb/nimation/XmlAnimationActivity.a Landroid/widget/Button;]
+  + Fieldref [com/myb/nimation/XmlAnimationActivity.b Landroid/widget/ImageView;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Methodref [com/myb/nimation/XmlAnimationActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [com/myb/nimation/XmlAnimationActivity.requestWindowFeature (I)Z]
+  + Methodref [com/myb/nimation/XmlAnimationActivity.setContentView (I)V]
+  + Methodref [com/myb/nimation/a.<init> (Lcom/myb/nimation/XmlAnimationActivity;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lcom/myb/nimation/XmlAnimationActivity;)V]
+  + NameAndType [a Landroid/widget/Button;]
+  + NameAndType [b Landroid/widget/ImageView;]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [requestWindowFeature (I)Z]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(I)Z]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Lcom/myb/nimation/XmlAnimationActivity;)Landroid/widget/ImageView;]
+  + Utf8 [(Lcom/myb/nimation/XmlAnimationActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/widget/Button;]
+  + Utf8 [Landroid/widget/ImageView;]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/widget/Button]
+  + Utf8 [android/widget/ImageView]
+  + Utf8 [b]
+  + Utf8 [com/myb/nimation/XmlAnimationActivity]
+  + Utf8 [com/myb/nimation/a]
+  + Utf8 [findViewById]
+  + Utf8 [onCreate]
+  + Utf8 [requestWindowFeature]
+  + Utf8 [setContentView]
+  + Utf8 [setOnClickListener]
+
+Fields (count = 2):
+  + Field:        a Landroid/widget/Button;
+    Access flags: 0x2
+      = private android.widget.Button a
+  + Field:        b Landroid/widget/ImageView;
+    Access flags: 0x2
+      = private android.widget.ImageView b
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public XmlAnimationActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #11
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 59, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] iconst_1
+      [2] invokevirtual #15
+        + Methodref [com/myb/nimation/XmlAnimationActivity.requestWindowFeature (I)Z]
+      [5] pop
+      [6] aload_0 v0
+      [7] aload_1 v1
+      [8] invokespecial #12
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [11] aload_0 v0
+      [12] ldc #1
+        + Integer [2130903041]
+      [14] invokevirtual #16
+        + Methodref [com/myb/nimation/XmlAnimationActivity.setContentView (I)V]
+      [17] aload_0 v0
+      [18] aload_0 v0
+      [19] ldc #3
+        + Integer [2131099654]
+      [21] invokevirtual #14
+        + Methodref [com/myb/nimation/XmlAnimationActivity.findViewById (I)Landroid/view/View;]
+      [24] checkcast #5
+        + Class [android/widget/Button]
+      [27] putfield #9
+        + Fieldref [com/myb/nimation/XmlAnimationActivity.a Landroid/widget/Button;]
+      [30] aload_0 v0
+      [31] aload_0 v0
+      [32] ldc #2
+        + Integer [2131099653]
+      [34] invokevirtual #14
+        + Methodref [com/myb/nimation/XmlAnimationActivity.findViewById (I)Landroid/view/View;]
+      [37] checkcast #6
+        + Class [android/widget/ImageView]
+      [40] putfield #10
+        + Fieldref [com/myb/nimation/XmlAnimationActivity.b Landroid/widget/ImageView;]
+      [43] aload_0 v0
+      [44] getfield #9
+        + Fieldref [com/myb/nimation/XmlAnimationActivity.a Landroid/widget/Button;]
+      [47] new #8
+        + Class [com/myb/nimation/a]
+      [50] dup
+      [51] aload_0 v0
+      [52] invokespecial #17
+        + Methodref [com/myb/nimation/a.<init> (Lcom/myb/nimation/XmlAnimationActivity;)V]
+      [55] invokevirtual #13
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [58] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/myb/nimation/XmlAnimationActivity;)Landroid/widget/ImageView;
+    Access flags: 0x1008
+      = static synthetic android.widget.ImageView a(com.myb.nimation.XmlAnimationActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #10
+        + Fieldref [com/myb/nimation/XmlAnimationActivity.b Landroid/widget/ImageView;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/myb/nimation/a
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.myb.nimation.a extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 37):
+  + Integer [2130968576]
+  + Class [android/view/View$OnClickListener]
+  + Class [android/view/animation/AnimationUtils]
+  + Class [android/widget/ImageView]
+  + Class [com/myb/nimation/XmlAnimationActivity]
+  + Class [com/myb/nimation/a]
+  + Class [java/lang/Object]
+  + Fieldref [com/myb/nimation/a.a Lcom/myb/nimation/XmlAnimationActivity;]
+  + Methodref [android/view/animation/AnimationUtils.loadAnimation (Landroid/content/Context;I)Landroid/view/animation/Animation;]
+  + Methodref [android/widget/ImageView.startAnimation (Landroid/view/animation/Animation;)V]
+  + Methodref [com/myb/nimation/XmlAnimationActivity.a (Lcom/myb/nimation/XmlAnimationActivity;)Landroid/widget/ImageView;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lcom/myb/nimation/XmlAnimationActivity;)Landroid/widget/ImageView;]
+  + NameAndType [a Lcom/myb/nimation/XmlAnimationActivity;]
+  + NameAndType [loadAnimation (Landroid/content/Context;I)Landroid/view/animation/Animation;]
+  + NameAndType [startAnimation (Landroid/view/animation/Animation;)V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/Context;I)Landroid/view/animation/Animation;]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Landroid/view/animation/Animation;)V]
+  + Utf8 [(Lcom/myb/nimation/XmlAnimationActivity;)Landroid/widget/ImageView;]
+  + Utf8 [(Lcom/myb/nimation/XmlAnimationActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/myb/nimation/XmlAnimationActivity;]
+  + Utf8 [a]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [android/view/animation/AnimationUtils]
+  + Utf8 [android/widget/ImageView]
+  + Utf8 [com/myb/nimation/XmlAnimationActivity]
+  + Utf8 [com/myb/nimation/a]
+  + Utf8 [java/lang/Object]
+  + Utf8 [loadAnimation]
+  + Utf8 [onClick]
+  + Utf8 [startAnimation]
+
+Fields (count = 1):
+  + Field:        a Lcom/myb/nimation/XmlAnimationActivity;
+    Access flags: 0x1010
+      = final synthetic com.myb.nimation.XmlAnimationActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/myb/nimation/XmlAnimationActivity;)V
+    Access flags: 0x0
+      = a(com.myb.nimation.XmlAnimationActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #8
+        + Fieldref [com/myb/nimation/a.a Lcom/myb/nimation/XmlAnimationActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #12
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 22, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [com/myb/nimation/a.a Lcom/myb/nimation/XmlAnimationActivity;]
+      [4] ldc #1
+        + Integer [2130968576]
+      [6] invokestatic #9
+        + Methodref [android/view/animation/AnimationUtils.loadAnimation (Landroid/content/Context;I)Landroid/view/animation/Animation;]
+      [9] astore_2 v2
+      [10] aload_0 v0
+      [11] getfield #8
+        + Fieldref [com/myb/nimation/a.a Lcom/myb/nimation/XmlAnimationActivity;]
+      [14] invokestatic #11
+        + Methodref [com/myb/nimation/XmlAnimationActivity.a (Lcom/myb/nimation/XmlAnimationActivity;)Landroid/widget/ImageView;]
+      [17] aload_2 v2
+      [18] invokevirtual #10
+        + Methodref [android/widget/ImageView.startAnimation (Landroid/view/animation/Animation;)V]
+      [21] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

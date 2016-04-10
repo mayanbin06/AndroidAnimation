@@ -1,0 +1,2 @@
+com.myb.nimation.XmlAnimationActivity
+com.myb.nimation.XmlAnimationActivity: XmlAnimationActivity()

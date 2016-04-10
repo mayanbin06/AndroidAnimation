@@ -1,0 +1,8 @@
+com.myb.nimation.XmlAnimationActivity -> com.myb.nimation.XmlAnimationActivity:
+    android.widget.Button button -> a
+    android.widget.ImageView image -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    android.widget.ImageView access$000(com.myb.nimation.XmlAnimationActivity) -> a
+com.myb.nimation.XmlAnimationActivity$1 -> com.myb.nimation.a:
+    com.myb.nimation.XmlAnimationActivity this$0 -> a
+    void onClick(android.view.View) -> onClick

@@ -1,0 +1,10 @@
+com.myb.nimation.BuildConfig
+com.myb.nimation.R
+com.myb.nimation.R$anim
+com.myb.nimation.R$attr
+com.myb.nimation.R$drawable
+com.myb.nimation.R$id
+com.myb.nimation.R$layout
+com.myb.nimation.R$string
+com.myb.nimation.ViewAnimation
+com.myb.nimation.ViewAnimation$1

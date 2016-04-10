@@ -1,0 +1,41 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-dontoptimize
+-ignorewarnings 
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keepattributes Signature
+#这里是导入工程中所用到的一些三方包, 用-libraryjars 避免混淆第三方的包
+#-libraryjars libs/android-wheel.jar
+
+-dontskipnonpubliclibraryclassmembers
+-dontskipnonpubliclibraryclasses
+
+#这里是对gson的处理
+-keep class com.google.**{*;}
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+##---------------Begin: proguard configuration for Gson  ----------
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature  
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+#-keep class com.google.gson.stream.** { *; }  
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.xxxx.cmb.entity.** { *; }  
+#这里是对gson的用到的javabean处理
+-keep class com.xxxx.ct.entity.** { *; }
+
+-keep class com.xxxx.entity.** { *; } -keep class com.xxxxx.entity.** { *; } ##---------------End: proguard configuration for Gson -----------keep public class * extends android.app.Activity-keep public class * extends android.app.Application-keep public class * extends android.app.Service-keep public class * extends android.content.BroadcastReceiver-keep public class * extends android.content.ContentProvider-keep public class * extends android.app.backup.BackupAgentHelper-keep public class * extends android.preference.Preference-keep public class com.android.vending.licensing.ILicensingService-keep public class * extends net.sf.json.xml.XMLSerializer-keep class android.support.v4.** {*;} -keep interface android.support.v4.app.** {*;} -keep public class * extends android.support.v4.** -keep public class * extends android.app.Fragment-keep class com.google.gson.stream.** {*;} -keep class com.google.gson.examples.android.model.** {*;} -keepclasseswithmembernames class * { native <methods>;}-keepclasseswithmembers class * { public <init>(android.content.Context, android.util.AttributeSet);}-keepclasseswithmembers class * { public <init>(android.content.Context, android.util.AttributeSet, int);}-keepclassmembers class * extends android.app.Activity { public void *(android.view.View);}-keepclassmembers enum * { public static **[] values(); public static ** valueOf(java.lang.String);}-keep class * implements android.os.Parcelable { public static final android.os.Parcelable$Creator *;}-keep public class com.easipass.common.net.secret
+#这里是不混淆三方包
+-keep class com.motorola.** { *;}-keep class com.baidu.location.** {*;}-keep class com.google.zxing.** {*;}-keep class android.support.v4.** {*;}-keep class net.sourceforge.pinyin4j.** {*;}-keep class kankan.wheel.widget.** {*;}-keep class org.apache.commons.collections.** {*;}-keep class org.apache.commons.beanutils.** {*;}-keep class org.apache.commons.lang.** {*;}-keep class org.apache.commons.net.** {*;}-keep class net.sf.ezmorph.** {*;}-keep class net.sf.json.** {*;}-keep class com.easipass.util.tools.** {*;}-keep class com.umeng.analytics.** {*;}-keep class com.umeng.common.** {*;}-keep class com.easipass.common.net.** {*;}-keep class net.sf.** {*;}-keep class com.badlogic.** {*;}-keep class * implements com.badlogic.gdx.utils.Json*
